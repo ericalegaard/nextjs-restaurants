@@ -1,0 +1,12 @@
+@use '../sass/abstracts/mixins';
+
+.col {
+    width: 100%;
+    @for $i from 1 through 12 {
+        &.col-#{$i} {
+            @include mixins.breakpoint(tablet) {
+                width: calc(100% / 12 * #{$i})
+            }
+        }
+    }
+}

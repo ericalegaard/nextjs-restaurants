@@ -1,0 +1,14 @@
+.menuItem {
+    display: flex;
+    margin-bottom: 1rem;
+    .image {
+        width: 150px;
+        height: auto;
+        margin-right: 1rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

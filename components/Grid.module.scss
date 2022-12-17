@@ -1,0 +1,14 @@
+@use '../sass/abstracts/mixins';
+
+.grid {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    @include mixins.breakpoint(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mixins.breakpoint(laptop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

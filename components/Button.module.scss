@@ -1,0 +1,24 @@
+@use '../sass/abstracts/mixins';
+@use '../sass/abstracts/vars';
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: 0;
+    background-color: vars.$color_green;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: vars.$font_secondary;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    transition: all .5s;
+    &:hover {
+        cursor: pointer;
+        background-color: darkgreen;
+    }
+}
+.primary { background-color: black; }
+.secondary { background-color: blue; }
